@@ -1,7 +1,7 @@
-str = 'Softvan_innoventa'
+str = 'Harsh-Parekh'
 
 print(str)
-# Softvan_innoventa
+# Harsh-Parekh
 
 '''
 comment section
@@ -10,28 +10,29 @@ cooment2
 '''
 
 print(str[0])
-# S
+#H
 
 print(str[2:7])
-# ftvan
+# rsh-P
 
 print(str[2::2])
-# ftvan_innoventa
+# rhPrk
 
 print(str * 2)
-# Softvan_innoventaSoftvan_innoventa
+# Harsh-ParekhHarsh-Parekh
 
 print(str + "Hello")
-# Softvan_innoventaHello
+# Harsh-ParekhHello
 
 print(str, 'hello')
-# Softvan_innoventa hello
+# Harsh-Parekh hello
 
 print(str + '1')
-# Softvan_innoventa1
+# Harsh-Parekh1
 
 print(str, 1)
-# Softvan_innoventa 1
+# Harsh-Parekh 1
 
 # Format method
-print("Hey My name is: %s my roll no is : %d how are you: %s" % ('a', 44, 'Vishal'))
+print("Hey My name is: %s my roll no is : %d how are you: %s" % ('a', 44, 'Harsh'))
+#Hey My name is: a my roll no is : 44 how are you: Harsh
