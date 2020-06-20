@@ -1,13 +1,3 @@
-"""
-Stack using list
-bascis of stack :-
-1) Lifo(last in first out)
-2) opertaion's :
-    1) push - insert element
-    2) pop  - remove element
-    3) peep - check top of stack
-3) usage in Website(control flow),memory,etc
-"""
 class Stack:
     ls=[]
     def __init__(self,cap):
