@@ -1,20 +1,4 @@
-"""
-Queue datastructure using python list:-
-basic of queue:-
-1) Fifo (First in first out)
--> real time example
-    1  -Movie ticket line
--> CSE Line
-    1 -online compilers or interpreter
-    2 -online website of govt
-    3 -When a resource is shared among multiple consumers. Examples include CPU scheduling, Disk Scheduling.
-    4 -When data is transferred asynchronously between two processes. Examples include IO Buffers, pipes, file IO, etc.
-->operations:-
-    1)  enqueue - insert
-    2)  dequeue - delete
-    3)  peek    - show element at front
-    4)  isempty - returns True or false on empty or not
-"""
+
 class Queue:
 
     que=[]
