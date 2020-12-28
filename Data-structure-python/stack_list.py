@@ -1,48 +1,58 @@
-class Stack:
-    ls=[]
-    def __init__(self,cap):
-        self.cap=cap
 
-    def push(self,ele):
-        if len(self.ls)<self.cap:
-            self.ls.append(ele)
-        else:
-            print("Stack over flow...")
-        print("stack is :",self.ls)
+class Stack:
+
+    def __init__(self):
+        self.ls = []
+        pass
+
+    def push(self, data):
+        self.ls.append(data)
+        pass
 
     def pop(self):
-        if len(self.ls)==0:
-            print("Stack under flow...")
-        else:
-            a=self.ls.pop()
-            print("pop element is :",a)
-        print("Stack is :",self.ls)
+        poped_ele = self.ls.pop()
+        return poped_ele
 
-    def peep(self):
-        if len(self.ls)==0:
-            print("Stack empty...")
+    def top(self):
+        if len(self.ls)>0:
+            return self.ls[-1]
         else:
-            print("Top element of stack is :",self.ls[len(self.ls)-1])
+            return -1
+    def isempty(self):
+        if len(self.ls) == 0:
+            return "YES"
+        else:
+            return "NO"
 
-S=Stack(int(input("Enter capacity :")))
+    def ret_stack(self):
+        return self.ls
+
+
+obj_stack = Stack()
+
 while True:
-    print()
-    print("1 push ")
-    print("2 pop ")
-    print("3 peep ")
-    print('4 exit ')
-    a=int(input("Enter choice :"))
-    if a==1:
-        print()
-        S.push(int(input("Enter element :")))
-
-    elif a==2:
-        S.pop()
-
-    elif a==3:
-        S.peep()
-
-    elif a==4:
+    print("1. Add data")
+    print("2. Remove data")
+    print("3. isempty?")
+    print("4. current stack")
+    print("5. top")
+    print("6. Exit")
+    print("Enter choice: ")
+    action = int(input())
+    if action == 1:
+        obj_stack.push(int(input("Enter data :")))
+        print("data pushed")
+    elif action == 2:
+        ret_statement = obj_stack.pop()
+        print(ret_statement)
+    elif action == 3:
+        ret_val = obj_stack.isempty()
+        print(ret_val)
+    elif action == 4:
+        ret_statement = obj_stack.ret_stack()
+        print(ret_statement)
+    elif action == 5:
+        ret_statement = obj_stack.top()
+        print(ret_statement)
+    elif action == 6:
         break
-    else:
-        print("Wrong choice...")
