@@ -1,5 +1,3 @@
-
-
 class Sol:
     def Merger_log(self,nums_1,nums_2,m,n):
         a=0
